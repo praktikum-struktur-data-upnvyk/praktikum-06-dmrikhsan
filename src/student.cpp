@@ -123,8 +123,9 @@ bool dequeue(Queue &q, int &nomor)
 // =============================================================================
 void clear(Queue &q)
 {
-     Node *dele = new Node();
-     while(q.depan != NULL){
+     while (q.depan != NULL)
+     {
+          Node *dele;
           dele = q.depan;
           q.depan = dele->next;
           delete dele;
